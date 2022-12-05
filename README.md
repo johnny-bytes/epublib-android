@@ -1,4 +1,6 @@
-#epublib-android
+[![](https://jitpack.io/v/johnny-bytes/epublib-android.svg)](https://jitpack.io/#johnny-bytes/epublib-android)
+
+# epublib-android
 forked from [psiegman/epublib](https://github.com/psiegman/epublib).
 
 
