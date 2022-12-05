@@ -16,9 +16,6 @@ The core runs both on android and a standard java environment. The tools run onl
 
 This means that reading/writing epub files works on Android.
 
-## Build status
-* Travis Build Status: [![Build Status](https://travis-ci.org/psiegman/epublib.svg?branch=master)](https://travis-ci.org/psiegman/epublib)
-
 ## Command line examples
 
 Set the author of an existing epub
@@ -101,22 +98,3 @@ java -jar epublib-3.0-SNAPSHOT.one-jar.jar --in input.epub --out result.epub --c
 	    }
 	  }
 	}
-
-
-## Usage in Android
-
-Add the following lines to your `app` module's `build.gradle` file:
-
-        repositories {
-            maven {
-                url 'https://github.com/psiegman/mvn-repo/raw/master/releases'
-            }
-        }
- 
-        dependencies {
-            implementation('nl.siegmann.epublib:epublib-core:4.0') {
-                exclude group: 'org.slf4j'
-                exclude group: 'xmlpull'
-            }
-            implementation 'org.slf4j:slf4j-android:1.7.25'
-        }
